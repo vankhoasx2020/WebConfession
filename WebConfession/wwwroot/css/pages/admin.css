@@ -1,0 +1,347 @@
+/*Chung*/
+
+*{
+    border: none;
+    margin: 0;
+    font-family: 'SVN-Comic Sans MS' ;
+  
+
+}
+body {
+    height: auto;
+    background-image: linear-gradient(to right, #4daf54, #3d8880);
+    display: inline-block;
+    width: 100%;
+}
+
+
+@font-face {
+    font-family: 'svn-zebra';
+    src: url('../../content/fonts/svn-zebra.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'svn-lobster';
+    src: url('../../content/fonts/svn-lobster.ttf') format('truetype');
+}
+
+
+
+.logo {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    position: fixed;
+    background-image: linear-gradient(to right, #4daf54, #3d8880);
+  
+}
+
+/*----------------logo v� ti�u ??-----------------*/
+
+.logo .iconbar {
+    height: 100%;
+    width: 50px;
+    font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+    align-items: center;
+}
+.logo i {
+    margin: 10px 0;
+}
+.logo .logo-text {
+    text-decoration: none;
+    height: 100%;
+    width: calc(100% - 50px);
+    font-family: svn-lobster;
+    font-size: 40px;
+    color: #fff;
+}
+
+/*-------N�t search-----------*/
+.search__box {
+    background-color: rgba(0,0,0,0.3);
+    overflow: hidden;
+    width: 300px;
+    height: 42px;
+    position: fixed;
+    top: 0.5%;
+    right: 8%;
+    border-radius: 12px;
+    transition: all 0.5s ease;
+    width: 300px;
+}
+
+.search__input {
+    width: 100%;
+    height: 100%;
+ 
+    outline: none;
+    color: #fff;
+    font-size: 24px;
+  
+    background-color: rgba(0,0,0,0.3)
+}
+
+
+.search__btn {
+    position: fixed;
+    top: 0.5%;
+    right: 8%;
+    width: 42px;
+    height: 42px;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+}
+
+.search__btn:hover {
+    cursor: pointer;
+}
+
+.search__open {
+    
+}
+
+
+/*-----------------N�t g?i cfs-------------------*/
+.menu-item {
+    position: fixed;
+    color: #fff;
+    height: 40px;
+    display: flex;
+    right: 3%;
+    width: 200px;
+    height: 45px;
+    border-radius: 33px;
+    background-image: linear-gradient(45deg, #A439BB, #e13618);
+    border: 3px solid red;
+    bottom: 4%;
+    text-align: center;
+}
+
+
+.menu-item .menu-item-icon{
+    height: 100%;
+    width: 40px;
+    padding-top: 8px;
+    padding-right: 1px;
+    padding-bottom: 6px;
+    padding-left: 4px;
+    font-size: 33px;
+    line-height: inherit;
+ }
+
+.menu-item:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.menu-item:focus {
+    opacity: 0.4
+}
+
+.menu-item .menu-item-text {
+    line-height: 40px;
+    font-size: 26px;
+    padding-left: 4px;
+}
+
+
+/*-----------th�n page------------*/
+.content {
+    margin: 50px auto;
+    height: auto;
+    width: 800px;
+}
+
+
+.content-confession {
+    width: inherit;
+    height: auto;
+    background-image: linear-gradient(180deg, #f57ba5, #e9abd3);
+    border-radius: 36px;
+    margin: 32px 0;
+}
+
+.content-confession-body {
+    padding: 16px;
+    font-size: 24px;
+}
+.cfs-id {
+    border: 1px solid black;
+    width: fit-content;
+    align-items: center;
+    border-radius: 36px;
+    text-align: center;
+    margin: 4px 0;
+    padding: 4px 9px;
+}
+
+.cfs-time {
+    border: 1px solid black;
+    width: fit-content;
+    align-items: center;
+    border-radius: 36px;
+    text-align: center;
+    margin: 4px 0;
+    padding: 4px 9px;
+}
+.cfs-sender {
+    border: 1px solid black;
+    width: fit-content;
+    align-items: center;
+    border-radius: 36px;
+    text-align: center;
+    margin: 4px 0;
+    padding: 4px 9px;
+}
+.cfs-recipient {
+    border: 1px solid black;
+    width: fit-content;
+    align-items: center;
+    border-radius: 36px;
+    text-align: center;
+    margin: 4px 0;
+    padding: 4px 9px;
+}
+.cfs-content {
+    border: 3px dashed #A439BB;
+    margin: 20px;
+    border-radius: 17px;
+    padding: 12px;
+    font-size: 28px;
+    text-align: justify;
+}
+
+.cfs-Img {
+    margin: 0 84px;
+    width: fit-content;
+    height:fit-content;
+   
+}
+.cfs-Img img {
+    width: 600px;
+    height: auto;
+}
+
+/*--------Ph?n pop sup admit cfs-----------*/
+.addCfs-background {
+    background-color: rgba(0,0,0,0.8);
+    display: block;
+    height: inherit;
+    position: fixed;
+    height: inherit;
+    top: 0;
+    bottom: 0;
+    width: inherit;
+}
+
+.addCfs {
+    width: 600px;
+    height: 630px;
+    border: 1px solid #ccc;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #94c798;
+    border-radius: 10px;
+}
+.addCfs-header {
+    display: flex;
+    height: 32px;
+    padding: 4px;
+    font-size: 24px;
+}
+.addCfs-title {
+    padding-left: 10px;
+}
+.addCfs-header button {
+    right: 0;
+    position: absolute;
+    background-color: inherit;
+    font-size: 24px;
+    padding-top: 4px;
+    top: 0px;
+    border-radius: 29px;
+    margin-right: 3px;
+    margin-top: 2px;
+   
+}
+.addCfs-header button:hover {
+    cursor: pointer;
+    background-color: rgb(240, 41, 41);
+}
+
+.row textarea {
+
+   height: 360px;
+   width: 564px;
+   margin: 4px auto;
+   font-size: 24px;
+   border-radius: 4px;
+}
+
+.addCfs-body {
+ 
+}
+
+.row {
+    padding-left: 16px;
+    font-size: 24px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+.row input {
+    font-size: 24px;
+    border-radius: 4px;
+    margin: 0px 4px;
+}
+.addCfs-sender {
+    width: 81%;
+
+}
+.addCfs-recipient {
+    width: 42%;
+}
+.addCfs-imgLink {
+    width: 47%;
+}
+
+.addCfs-footer {
+    position: absolute;
+    bottom: 0;
+    width: inherit
+}
+.addCfs-footer button {
+    position: absolute;
+    width: fit-content;
+    height: 36px;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%,-23%);
+    font-size: 24px;
+    align-items: center;
+    border-radius: 36px;
+    text-align: center;
+    margin: 4px 0;
+    padding: 4px 9px;
+    justify-content: center;
+}
+.addCfs-footer button:hover{
+    cursor: pointer;
+    border: 1px solid #f37e7e;
+    background: #03f89b;
+}
+
+
+/*----thu?c t�nh ph?---------*/
+.hide {
+    display: none;
+}
+
+.required-error, .required-error:focus {
+    border: 2px solid red;
+}

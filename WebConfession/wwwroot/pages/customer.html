@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../css/pages/customer.css" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="logo">
+        <div class="iconbar">
+            <i class='bx bxs-heart'></i>
+        </div>
+        <!--<div class="logo-text">Confession</div>-->
+        <a class="logo-text" href="../pages/customer.html">Confession</a>
+        <div class="search__box">
+            <input class="search__input" type="text">
+
+            <button class="search__btn">
+                <i class='bx bx-search'></i>
+            </button>
+        </div>
+        <div class="account-login">
+            <button>Đăng nhập</button>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <div class="menu-item-icon">
+            <i class='bx bxs-message-add'></i>
+        </div>
+        <div class="menu-item-text" id="btnAdd">Gửi Confession</div>
+
+    </div>
+
+
+    <div class="content">
+
+        <div class="content-body">
+            <div class="page-title">
+
+            </div>
+
+            <div class="page-content">
+
+                <!--<div class="content-confession">
+                    <div class="content-confession-body">
+                        <p class="cfs-time">now</p>
+                        <p class="cfs-sender">kdd</p>
+                        <p class="cfs-body"> khoa yêu vân</p>
+                    </div>
+                </div>-->
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="addCfs-background hide"></div>
+    <div class="addCfs hide">
+        <div class="addCfs-header">
+            <div class="addCfs-title">Thêm nội dung Confession tại đây nhé!</div>
+            <button class="addCfs-button-close">
+                <i class='bx bx-x'></i>
+            </button>
+        </div>
+        <div class="addCfs-body">
+            <div class="row">
+                <label>Bạn là ai?</label>
+                <input type="text" title="" value="" class="addCfs-sender" />
+            </div>
+            <div class="row">
+                <label>Bạn muốn gửi Confession này cho ai?</label>
+                <input type="text" value="" class="addCfs-recipient" />
+            </div>
+            <div class="row">
+                <label>Lời nhắn gửi của bạn</label>
+            </div>
+            <div class="row">
+                <textarea class="addCfs-content"></textarea>
+            </div>
+            <div class="row">
+                <label>Link hình ảnh bạn muốn đính kèm</label>
+                <input type="url" name="" value="" class="addCfs-imgLink" />
+            </div>
+
+        </div>
+        <div class="addCfs-footer">
+            <button class="cfs-admit">Gửi confession</button>
+        </div>
+
+    </div>
+    <div class="login">
+        <div class="row login-username">
+            <p class="login-username-text">Tên đăng nhập</p>
+            <input type="text" class="login-username-input" name="name" value="" />
+        </div>
+        <div class="row login-password">
+            <p class="login-username-text">Mật khẩu</p>
+            <input type="text" class="login-password-input" name="name" value="" />
+        </div>
+        <div class="row login-btn">
+            <button class="login-btn-action">Đăng nhập</button>
+
+       
+        </div>
+    </div>    
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/customer.js"></script>
+
+</body>
+</html>
